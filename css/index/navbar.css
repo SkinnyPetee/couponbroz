@@ -1,0 +1,358 @@
+header {
+  width : 100%;
+  height : 110px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.container {
+  width : 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.cross-wrapper {
+
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 15px;
+}
+
+.cross {
+  font-size: 2rem;
+  color: white;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  background-color: #CC4032;
+  width: 250px;
+  height: 100%;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  transition: .3s;
+
+}
+
+.active {
+  left: 0;
+}
+
+.sidebar ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar ul li {
+
+  list-style-type: none;
+}
+
+.sidebar ul li a {
+  text-transform: capitalize;
+  color: white;
+  padding: 20px 10px;
+  display: block;
+  text-decoration: none;
+  border-bottom: 1px solid white;
+}
+
+
+
+.fa-search {
+  position: absolute;
+  top: 8px;
+  left: 9px;
+  font-size: 1.1rem;
+  opacity: 0.2;
+
+}
+
+
+
+.logo-wrapper a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.9rem;
+  font-weight: 700;
+
+}
+
+.search-form {
+  position: relative;
+  width : 50%;
+}
+
+.search-form input {
+  width : 100%;
+  height : 35px;
+  font-size: 1rem;
+  text-indent: 31px;
+}
+
+.navbar-main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  background-color: #CC4032;
+  height: 66%;
+}
+
+.navbar-sub {
+  width: 100%;
+  background-color: #7F281F;
+  height: 33%;
+
+
+}
+
+.nav-links {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+}
+
+
+
+
+
+
+
+.menu-sub {
+
+  padding : 1em;
+  top: 36px;
+  left: -79px;
+  position: absolute;
+  background-color: white;
+  width: 650px;
+
+  justify-content: space-between;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+  z-index: 1;
+  display: none;
+}
+
+.stores-wrapper{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.nav-link-stores {
+  position: relative;
+  padding: 9px 0;
+}
+
+.nav-link-stores:hover .menu-sub {
+  display: flex;
+}
+
+.stores-wrapper h4 {
+  margin-bottom: 10px;
+}
+
+.stores-featured li {
+  margin: 10px 0;
+}
+
+.hamburger-wrapper {
+  display: none;
+}
+
+.nav-links li {
+  margin-left: 50px;
+  list-style-type: none;
+  color: black;
+  font-weight: 300;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+}
+
+.fa-caret-down{
+  display: none;
+}
+
+.search-form input::placeholder {
+  opacity : 0.3;
+}
+
+.search-form input:focus {
+  outline: none;
+}
+
+.login-box {
+  padding : 10px 12px;
+  border: 1px solid white;
+}
+.login-box a {
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+}
+
+
+.nav-link-cat {
+  position: relative;
+  padding: 9px 0;
+}
+
+.menu-cat {
+  position: absolute;
+  z-index: 2;
+  padding : 1em;
+  top: 37px;
+  left : -223px;
+  background-color: white;
+  width: 650px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  display: none;
+}
+
+
+.categories-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.categories-wrapper h4 {
+  margin-bottom: 10px;
+}
+
+.cat-list li {
+
+  margin : 10px 0;
+}
+
+.nav-link-cat:hover .menu-cat {
+  display: flex;
+}
+
+
+
+
+
+.nav-link-brand {
+
+  position: relative;
+  padding: 9px 0;
+}
+
+.menu-brand {
+
+  position: absolute;
+  z-index: 3;
+  padding : 1em;
+  top: 37px;
+  left : -406px;
+  background-color: white;
+  width: 650px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  display: none;
+}
+
+.nav-link-brand:hover .menu-brand {
+  display: flex;
+}
+
+.brands-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.brands-wrapper h4 {
+  margin-bottom: 10px;
+}
+
+.brands-list li {
+
+  margin : 10px 0;
+}
+
+
+@media only screen and (max-width: 900px) {
+
+
+
+
+
+
+  .logo-wrapper a {
+
+
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+
+  .login-box {
+    width: 90px;
+    height : 30px;
+    padding : 10px 12px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .login-box a {
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+    font-size: 0.7rem;
+  }
+
+  .login-box {
+     display: none;
+  }
+
+  .hamburger-wrapper {
+    display: inline-block;
+  }
+
+  .fa-bars {
+    font-size: 1.5rem;
+    color: white;
+  }
+
+  .container{
+    width: 95%;
+    justify-content: space-between;
+
+  }
+
+
+  .navbar-sub {
+    display: none;
+  }
+
+  .search-form {
+
+    width : 60%;
+  }
+
+}
