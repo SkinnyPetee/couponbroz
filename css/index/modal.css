@@ -1,13 +1,15 @@
 
 .coup-act-modal {
-  width : 500px;
-  height: 300px;
-  background-color: white;
-  position: fixed;
+  position: absolute;
+
   top: 50%;
   left: 50%;
-  margin-top: -150px; /* Negative half of height. */
-  margin-left: -250px;
+   transform: translate(-50%, -50%);
+  width : 50%;
+  padding: 20px;
+
+  background-color: white;
+
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
    opacity: 0;
   transition: visibility 0s, opacity 0.5s linear;
@@ -27,14 +29,15 @@
 .in-active {
   user-select: none;
   pointer-events: none;
-  
+
 }
 .cross-wrapper-2 {
   display: flex;
   justify-content: flex-end;
 
   width: 100%;
-  padding: 5px;
+  padding: 15px;
+
 }
 
 .cross-wrapper-2 .fa-times {
@@ -84,10 +87,7 @@
 
 @media only screen and (max-width: 600px) {
   .coup-act-modal {
-    width : 250px;
-    height: 300px;
-    margin-top: -150px; /* Negative half of height. */
-    margin-left: -125px;
+    width: 80%;
   }
 
   .header-wrapper h3 {
