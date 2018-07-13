@@ -21,6 +21,13 @@
   opacity: 1;
   visibility: visible;
 
+
+}
+
+.in-active {
+  user-select: none;
+  pointer-events: none;
+  
 }
 .cross-wrapper-2 {
   display: flex;
