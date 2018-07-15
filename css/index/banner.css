@@ -1,7 +1,8 @@
 .items-wrapper {
   display: flex;
   justify-content: center;
-  margin-top : 50px;
+  margin-top : 20px;
+
 
 }
 
@@ -23,8 +24,8 @@
 
   display: flex;
   justify-content: center;
-  margin-top:50px;
-  margin-bottom : 50px;
+  margin-top:20px;
+  margin-bottom : 20px;
 }
 
 .title-div {
@@ -43,12 +44,12 @@
 @media only screen and (max-width: 900px) {
   .items-wrapper {
 
-    margin-top : 5px;
 
   }
 
   .banner {
      width : 85%;
+     margin-top: -20px;
    }
 
    .title-wrapper {
